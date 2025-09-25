@@ -8,13 +8,13 @@ First, get Docker and Docker Compose installed: [https://docs.docker.com/get-doc
 Then, Clone the project
 
 ```bash
-  git clone https://github.com/JohnnySprit/Frag-Archive.git
+    git clone https://github.com/JohnnySprit/Frag-Archive.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd frag-archive
+    cd frag-archive
 ```
 
 Copy .env.example to .env and edit as needed
@@ -24,7 +24,7 @@ Copy .env.example to .env and edit as needed
 
 Run with Docker
 ```bash
-  docker-compose up --build
+    docker-compose up --build
 ```
 
 Use the Web App!
