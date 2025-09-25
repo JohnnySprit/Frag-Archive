@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "player")
+@RequestMapping(path = "players")
 public class PlayerController {
     private final PlayerService playerService;
 
