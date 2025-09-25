@@ -27,9 +27,9 @@ Run with Docker
     docker-compose up --build
 ```
 
-Use the Web App!
+Use the Web App and check the box "pretty-print"!
 ```bash
-    http://localhost:8080
+    http://localhost:8080/players
 ```
 
 
