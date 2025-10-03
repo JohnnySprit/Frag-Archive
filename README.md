@@ -37,6 +37,8 @@ Use the Web App and check the box "pretty-print"!
 
 - Develop a React.js front-end and connect it to my backend
 
+- Expand the database by adding tables to support data from other games
+
 - Hosting the database and web application
 
 - Data Scraping for consistent, up-to-date data
@@ -44,3 +46,4 @@ Use the Web App and check the box "pretty-print"!
 ## Languages & Technologies
 
 [![My Skills](https://skillicons.dev/icons?i=java,spring,postgresql,docker)](https://skillicons.dev)
+
