@@ -3,7 +3,7 @@ Frag Archive is a Player Data Management API that allows its users to manipulate
 
 ## How To Run Locally
 
-First, get Docker and Docker Compose installed: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+First, get Docker installed: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
 Then, Clone the project
 
@@ -27,7 +27,11 @@ Run with Docker
     docker-compose up --build
 ```
 
-Use the Web App and check the box "pretty-print"!
+To use the web app with the WIP Frontend go to:
+```bash
+    http://localhost
+```
+To view the database and make API calls, use:
 ```bash
     http://localhost:8080/players
 ```
@@ -35,7 +39,7 @@ Use the Web App and check the box "pretty-print"!
 
 ## Future Plans
 
-- Develop a React.js front-end and connect it to my backend
+- Develop a React.js front-end and connect it to my backend (Connected, Frontend still WIP)
 
 - Expand the database by adding tables to support data from other games
 
@@ -45,5 +49,6 @@ Use the Web App and check the box "pretty-print"!
 
 ## Languages & Technologies
 
-[![My Skills](https://skillicons.dev/icons?i=java,spring,postgresql,docker)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,spring,postgresql,react,bootstrap,docker)](https://skillicons.dev)
+
 
