@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9ceb6dce-0674-495c-9853-e0d8c960e164" name="Changes" comment="Partially Integrated Front-End with React and Bootstrap&#10;&#10;- Work-in-Progess: Frontend includes a table with all players in the CounterStrike.sql, along with a header and footer.&#10;- Put a &quot;Add Player&quot; Button into Frontend, intend to implement later on.&#10;- Working port is now &quot;80&quot; (the default) for simplicity.&#10;- Added Dockerfile &amp; updated docker-compose.yml in order to containerize the frontend&#10;- Added &quot;CT&quot; favicon.&#10;- Fixed Backend bugs regarding API calls/made naming easier to work with." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar!/jakarta/persistence/Column.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frag-archive/frag-archive-frontend/node_modules/bootstrap/dist/css/bootstrap.css" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frag-archive/frag-archive-frontend/node_modules/bootstrap/dist/css/bootstrap.min.css" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="32XJUhjmKyX3MRR0Yb09FE25bmS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FragArchiveApplication.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "Application.java.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Johnny/Downloads/frag-archive/frag-archive/frag-archive-frontend/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Johnny\Downloads\frag-archive\frag-archive\frag-archive-frontend\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Johnny\Downloads\frag-archive\frag-archive\frag-archive-frontend\public" />
+      <recent name="C:\Users\Johnny\Downloads\frag-archive\frag-archive" />
+      <recent name="C:\Users\Johnny\Downloads\frag-archive" />
+      <recent name="C:\Users\Johnny\Downloads\frag-archive\db\init" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FragArchiveApplication">
+    <configuration name="FragArchiveApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cs.frag_archive.FragArchiveApplication" />
+      <module name="frag-archive" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cs.frag_archive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="FragArchiveApplication.java" />
+      <module name="frag-archive" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FragArchiveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="frag-archive" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cs.frag_archive.FragArchiveApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.java" />
+      <item itemvalue="Application.FragArchiveApplication" />
+      <item itemvalue="Spring Boot.FragArchiveApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FragArchiveApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ceb6dce-0674-495c-9853-e0d8c960e164" name="Changes" comment="" />
+      <created>1757561000187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757561000187</updated>
+      <workItem from="1757561001192" duration="24000" />
+      <workItem from="1757561030285" duration="2937000" />
+      <workItem from="1757992013943" duration="9991000" />
+      <workItem from="1758326732118" duration="11000" />
+      <workItem from="1758753327051" duration="535000" />
+      <workItem from="1758754363697" duration="4682000" />
+      <workItem from="1758759083363" duration="1335000" />
+      <workItem from="1758766501096" duration="10839000" />
+      <workItem from="1758784664537" duration="605000" />
+      <workItem from="1758940701498" duration="1189000" />
+      <workItem from="1758942073143" duration="781000" />
+      <workItem from="1759109681706" duration="7001000" />
+      <workItem from="1759335312468" duration="77000" />
+      <workItem from="1759348661132" duration="796000" />
+      <workItem from="1759463598351" duration="2110000" />
+      <workItem from="1759537964276" duration="622000" />
+      <workItem from="1759608557803" duration="890000" />
+      <workItem from="1759610346057" duration="13974000" />
+    </task>
+    <task id="LOCAL-00001" summary="added and implemented Player.java, PlayerController.java, PlayerRepo.java, and PlayerService.java">
+      <option name="closed" value="true" />
+      <created>1758001422799</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758001422799</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Integrated Docker support for app and database&#10;&#10;- Added Dockerfile for Spring Boot application&#10;- Added docker-compose.yml for app and PostgreSQL&#10;- Configured .env.example for environment variables">
+      <option name="closed" value="true" />
+      <created>1758774309313</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758774309313</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Partially Integrated Front-End with React and Bootstrap&#10;&#10;- Work-in-Progess: Frontend includes a table with all players in the CounterStrike.sql, along with a header and footer.&#10;- Put a &quot;Add Player&quot; Button into Frontend, intend to implement later on.&#10;- Working port is now &quot;80&quot; (the default) for simplicity.&#10;- Added Dockerfile &amp; updated docker-compose.yml in order to containerize the frontend&#10;- Added &quot;CT&quot; favicon.&#10;- Fixed Backend bugs regarding API calls/made naming easier to work with.">
+      <option name="closed" value="true" />
+      <created>1759624535678</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759624535678</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added and implemented Player.java, PlayerController.java, PlayerRepo.java, and PlayerService.java" />
+    <MESSAGE value="Integrated Docker support for app and database&#10;&#10;- Added Dockerfile for Spring Boot application&#10;- Added docker-compose.yml for app and PostgreSQL&#10;- Configured .env.example for environment variables" />
+    <MESSAGE value="Partially Integrated Front-End with React and Bootstrap&#10;&#10;- Work-in-Progess: Frontend includes a table with all players in the CounterStrike.sql, along with a header and footer.&#10;- Put a &quot;Add Player&quot; Button into Frontend, intend to implement later on.&#10;- Working port is now &quot;80&quot; (the default) for simplicity.&#10;- Added Dockerfile &amp; updated docker-compose.yml in order to containerize the frontend&#10;- Added &quot;CT&quot; favicon.&#10;- Fixed Backend bugs regarding API calls/made naming easier to work with." />
+    <option name="LAST_COMMIT_MESSAGE" value="Partially Integrated Front-End with React and Bootstrap&#10;&#10;- Work-in-Progess: Frontend includes a table with all players in the CounterStrike.sql, along with a header and footer.&#10;- Put a &quot;Add Player&quot; Button into Frontend, intend to implement later on.&#10;- Working port is now &quot;80&quot; (the default) for simplicity.&#10;- Added Dockerfile &amp; updated docker-compose.yml in order to containerize the frontend&#10;- Added &quot;CT&quot; favicon.&#10;- Fixed Backend bugs regarding API calls/made naming easier to work with." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.HibernateException" package="org.hibernate" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/frag_archive$FragArchiveApplication.ic" NAME="FragArchiveApplication Coverage Results" MODIFIED="1757997455320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.cs.frag_archive.*</FILTER>
+    </SUITE>
+  </component>
+</project>
