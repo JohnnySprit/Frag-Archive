@@ -1,0 +1,37 @@
+services:
+  frag-archive-app:
+    build: .
+    container_name: frag-archive-app
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+
+  frontend:
+    build: ./frag-archive-frontend
+    container_name: frag-archive-frontend
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    depends_on:
+      - frag-archive-app
+
+  db:
+    image: postgres:15-alpine
+    container_name: frag-archive-db
+    environment:
+      POSTGRES_DB: CounterStrike
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d
+
+volumes:
+  postgres_data:
