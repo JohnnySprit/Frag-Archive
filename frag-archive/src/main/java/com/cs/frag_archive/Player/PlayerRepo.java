@@ -6,8 +6,9 @@ import java.util.List;
 
 
 @Repository
-public interface PlayerRepo extends JpaRepository<Player, String> {
+public interface PlayerRepo extends JpaRepository<Player, Integer> {
     void deleteByNickName(String nickname);
+    List<Player> findByPlayerId(Integer playerId);
     List<Player> findByCurrentTeam(String currentTeam);
     List<Player> findByCountry(String country);
     List<Player> findByNickName(String nickName);

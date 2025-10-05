@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping(path = "players")
 public class PlayerController {
@@ -20,23 +21,27 @@ public class PlayerController {
 
     @GetMapping
     public List<Player> getPlayers(
+            @RequestParam(required = false) Integer playerId,
             @RequestParam(required = false) String nickName,
             @RequestParam(required = false) String realName,
-            @RequestParam(required = false) Integer Age,
-            @RequestParam(required = false) String Country,
+            @RequestParam(required = false) Integer age,
+            @RequestParam(required = false) String country,
             @RequestParam(required = false) String currentTeam
             ){
-        if (nickName != null){
+        if (playerId != null){
+            return playerService.findPlayerById(playerId);
+        }
+        else if (nickName != null){
             return playerService.findPlayerByNickName(nickName);
         }
         else if (realName != null){
             return playerService.findPlayerByRealName(realName);
         }
-        else if (Age != null){
-            return playerService.findPlayerByAge(Age);
+        else if (age != null){
+            return playerService.findPlayerByAge(age);
         }
-        else if (Country != null){
-            return playerService.findPlayersByCountry(Country);
+        else if (country != null){
+            return playerService.findPlayersByCountry(country);
         }
         else if (currentTeam != null){
             return playerService.findPlayerByTeamName(currentTeam);
@@ -68,8 +73,4 @@ public class PlayerController {
         playerService.deletePlayer(nickName);
         return new ResponseEntity<>("Player has successfully been deleted.", HttpStatus.OK);
     }
-
-
-
-
 }

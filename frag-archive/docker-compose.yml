@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   frag-archive-app:
     build: .
@@ -11,6 +9,16 @@ services:
       - .env
     depends_on:
       - db
+
+
+  frontend:
+    build: ./frag-archive-frontend
+    container_name: frag-archive-frontend
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    depends_on:
+      - frag-archive-app
 
   db:
     image: postgres:15-alpine

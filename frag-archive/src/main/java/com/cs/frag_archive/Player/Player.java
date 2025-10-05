@@ -8,10 +8,9 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="player_statistics")
 public class Player {
-    @Column(name = "player_id")
-    private Integer playerId;
-
     @Id
+    @Column(name = "player_id", unique = true)
+    private Integer playerId;
     @Column(name = "nickname", unique = true)
     private String nickName;
     @Column(name = "real_name")
@@ -47,9 +46,7 @@ public class Player {
         this.rating = rating;
     }
 
-    public Player() {
-
-    }
+    public Player() {}
 
     public Integer getPlayerId() {
         return playerId;

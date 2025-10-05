@@ -22,6 +22,9 @@ public class PlayerService {
     public List<Player> findPlayerByTeamName(String teamName){
         return playerRepo.findByCurrentTeam(teamName);
     }
+    public List<Player> findPlayerById(Integer Id){
+        return playerRepo.findByPlayerId(Id);
+    }
 
     public List<Player> findPlayerByNickName(String nickname){
         return playerRepo.findByNickName(nickname);
@@ -54,7 +57,11 @@ public class PlayerService {
             playerToUpdate.setRealName(updatedPlayer.getRealName());
             playerToUpdate.setAge(updatedPlayer.getAge());
             playerToUpdate.setCurrentTeam(updatedPlayer.getCurrentTeam());
-
+            playerToUpdate.setTeams(updatedPlayer.getTeams());
+            playerToUpdate.setTotalKills(updatedPlayer.getTotalKills());
+            playerToUpdate.setTotalDeaths(updatedPlayer.getTotalDeaths());
+            playerToUpdate.setHeadshotPercentage(updatedPlayer.getHeadshotPercentage());
+            playerToUpdate.setRating(updatedPlayer.getRating());
             playerRepo.save(playerToUpdate);
             return playerToUpdate;
         }
