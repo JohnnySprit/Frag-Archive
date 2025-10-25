@@ -20,7 +20,7 @@ function PlayersComponent() {
     }
 
     return (
-        <div className='container'>
+        <div className='mainTable'>
             <h2 className={'text-center'} className={'mainText'}>Counter-Strike Players</h2>
             <button className={'btn btn-primary mb-2'} onClick={addNewPlayer}>Add Player</button>
             <table className = 'table table-striped table-bordered table-hover'>
