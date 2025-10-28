@@ -15,7 +15,7 @@ public class PlayerController {
     private final PlayerService playerService;
 
     @Autowired
-    public PlayerController(PlayerService playerService){
+    public PlayerController(PlayerService playerService) {
         this.playerService = playerService;
     }
 
@@ -27,50 +27,47 @@ public class PlayerController {
             @RequestParam(required = false) Integer age,
             @RequestParam(required = false) String country,
             @RequestParam(required = false) String currentTeam
-            ){
-        if (playerId != null){
+    ) {
+        if (playerId != null) {
             return playerService.findPlayerById(playerId);
-        }
-        else if (nickName != null){
+        } else if (nickName != null) {
             return playerService.findPlayerByNickName(nickName);
-        }
-        else if (realName != null){
+        } else if (realName != null) {
             return playerService.findPlayerByRealName(realName);
-        }
-        else if (age != null){
+        } else if (age != null) {
             return playerService.findPlayerByAge(age);
-        }
-        else if (country != null){
+        } else if (country != null) {
             return playerService.findPlayersByCountry(country);
-        }
-        else if (currentTeam != null){
+        } else if (currentTeam != null) {
             return playerService.findPlayerByTeamName(currentTeam);
-        }
-        else {
+        } else {
             return playerService.findAllPlayers();
         }
     }
 
     @PostMapping
-    public ResponseEntity<Player> addPlayer (@RequestBody Player player){
+    public ResponseEntity<Player> addPlayer(@RequestBody Player player) {
         Player createdPlayer = playerService.addPlayer(player);
         return new ResponseEntity<>(createdPlayer, HttpStatus.CREATED);
     }
 
     @PutMapping
-    public ResponseEntity<Player> editPlayer (@RequestBody Player player){
+    public ResponseEntity<Player> editPlayer(@RequestBody Player player) {
         Player editedPlayer = playerService.updatePlayer(player);
-        if (editedPlayer != null){
+        if (editedPlayer != null) {
             return new ResponseEntity<>(editedPlayer, HttpStatus.OK);
-        }
-        else {
+        } else {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 
-    @DeleteMapping("/{nickName}")
-    public ResponseEntity<String> deletePlayer(@PathVariable String nickName){
-        playerService.deletePlayer(nickName);
-        return new ResponseEntity<>("Player has successfully been deleted.", HttpStatus.OK);
+    @DeleteMapping("/{playerId}")
+    public ResponseEntity<String> deletePlayer(@PathVariable Integer playerId){
+        boolean deleted = playerService.deletePlayerById(playerId);
+        if (deleted) {
+            return new ResponseEntity<>("Player deleted successfully.", HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>("Player not found.", HttpStatus.NOT_FOUND);
+        }
     }
 }
