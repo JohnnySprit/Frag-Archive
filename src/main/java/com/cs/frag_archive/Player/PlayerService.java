@@ -11,46 +11,47 @@ public class PlayerService {
     private final PlayerRepo playerRepo;
 
     @Autowired
-    public PlayerService(PlayerRepo playerRepo){
+    public PlayerService(PlayerRepo playerRepo) {
         this.playerRepo = playerRepo;
     }
 
-    public List<Player> findAllPlayers(){
+    public List<Player> findAllPlayers() {
         return playerRepo.findAll();
     }
 
-    public List<Player> findPlayerByTeamName(String teamName){
+    public List<Player> findPlayerByTeamName(String teamName) {
         return playerRepo.findByCurrentTeam(teamName);
     }
-    public List<Player> findPlayerById(Integer Id){
+
+    public List<Player> findPlayerById(Integer Id) {
         return playerRepo.findByPlayerId(Id);
     }
 
-    public List<Player> findPlayerByNickName(String nickname){
+    public List<Player> findPlayerByNickName(String nickname) {
         return playerRepo.findByNickName(nickname);
     }
 
-    public List<Player> findPlayerByRealName(String name){
+    public List<Player> findPlayerByRealName(String name) {
         return playerRepo.findByRealName(name);
     }
 
-    public List<Player> findPlayersByCountry(String country){
+    public List<Player> findPlayersByCountry(String country) {
         return playerRepo.findByCountry(country);
     }
 
-    public List<Player> findPlayerByAge(Integer age){
+    public List<Player> findPlayerByAge(Integer age) {
         return playerRepo.findByAge(age);
     }
 
-    public Player addPlayer(Player player){
+    public Player addPlayer(Player player) {
         playerRepo.save(player);
         return player;
     }
 
-    public Player updatePlayer(Player updatedPlayer){
+    public Player updatePlayer(Player updatedPlayer) {
         List<Player> existingPlayer = playerRepo.findByNickName(updatedPlayer.getNickName());
 
-        if (!existingPlayer.isEmpty()){
+        if (!existingPlayer.isEmpty()) {
             Player playerToUpdate = existingPlayer.getFirst();
             playerToUpdate.setPlayerId(updatedPlayer.getPlayerId());
             playerToUpdate.setNickName(updatedPlayer.getNickName());
@@ -67,9 +68,13 @@ public class PlayerService {
         }
         return null;
     }
-    @Transactional
-    public void deletePlayer(String playerName){
-        playerRepo.deleteByNickName(playerName);
-    }
 
+    @Transactional
+    public boolean deletePlayerById(Integer playerId) {
+        if (playerRepo.existsById(playerId)) {
+            playerRepo.deleteById(playerId);
+            return true;
+        }
+        return false;
+    }
 }

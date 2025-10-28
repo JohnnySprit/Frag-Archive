@@ -14,11 +14,8 @@ SET row_security = off;
 SET default_tablespace = '';
 SET default_table_access_method = heap;
 
--- Drop table if exists to avoid "relation already exists"
-DROP TABLE IF EXISTS public.player_statistics;
 
--- Create table without primary key first
-CREATE TABLE public.player_statistics (
+CREATE TABLE IF NOT EXISTS public.player_statistics (
                                           player_id integer NOT NULL,
                                           nickname character varying(255) NOT NULL,
                                           real_name character varying(255),
